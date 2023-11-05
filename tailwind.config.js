@@ -3,9 +3,13 @@ import tailwindTypography from '@tailwindcss/typography';
 import { createThemes } from 'tw-colors';
 
 export default {
-    content: ['./src/**/*!(*.stories.*|*.spec).{ts,tsx,mdx,html}'],
-    purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-    safelist: ['bg-primary', 'bg-secondary'],
+    content: ['./src/**/*!(*.stories|*.spec).{ts,tsx,mdx,html}'],
+    mode: 'jit',
+    safelist: [
+        {
+            pattern: /bg-(primary|secondary)/,
+        },
+    ],
     darkMode: 'class',
     theme: {
         fontFamily: {

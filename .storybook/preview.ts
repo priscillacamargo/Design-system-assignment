@@ -1,7 +1,19 @@
 import type { Preview } from '@storybook/react';
-import 'tailwindcss/tailwind.css';
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
+
+import '../src/index.css';
 
 const preview: Preview = {
+    decorators: [
+        withThemeByDataAttribute({
+            themes: {
+                light: 'light',
+                dark: 'dark',
+            },
+            defaultTheme: 'light',
+            attributeName: 'data-theme',
+        }),
+    ],
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {

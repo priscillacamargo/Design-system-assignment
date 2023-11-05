@@ -12,7 +12,8 @@
         "precommit": "lint-staged",
         "prepare": "husky install",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "test-storybook": "test-storybook"
     },
     "dependencies": {
         "@headlessui/react": "^1.7.17",
@@ -22,13 +23,17 @@
         "ts-jest": "^29.1.1"
     },
     "devDependencies": {
+        "@storybook/addon-a11y": "^7.5.2",
         "@storybook/addon-essentials": "^7.5.2",
         "@storybook/addon-interactions": "^7.5.2",
         "@storybook/addon-links": "^7.5.2",
         "@storybook/addon-onboarding": "^1.0.8",
+        "@storybook/addon-themes": "^7.5.2",
         "@storybook/blocks": "^7.5.2",
+        "@storybook/jest": "^0.2.3",
         "@storybook/react": "^7.5.2",
         "@storybook/react-vite": "^7.5.2",
+        "@storybook/test-runner": "^0.13.0",
         "@storybook/testing-library": "^0.2.2",
         "@tailwindcss/typography": "^0.5.10",
         "@testing-library/jest-dom": "^6.1.4",
