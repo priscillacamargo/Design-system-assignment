@@ -36,6 +36,8 @@ For starting storybook please run:
 - Created composable components using atom design principles
 - The isolated components still use variables from the theme (assuming that the Design System is opinionated)
 - Just created a small test example didn't focus in extensive test implementation
+- I didn't set react router to manage several pages- I focused in the concepts important for the design system
+- I didn't set a persistence for the theme - I focused in the concepts important for the design system
 
 ## From Vite Readme
 
