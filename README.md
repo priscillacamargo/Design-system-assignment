@@ -4,8 +4,7 @@
 
 After cloning please run the command below in the project's root folder to install dependencies
 
-```npm run install
-```
+```npm run install```
 
 Then run the following command to run the development server:
 
