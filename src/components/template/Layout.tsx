@@ -15,13 +15,18 @@ const Layout = ({ children }: LayoutProps) => {
     };
 
     return (
-        <div className={`${isDarkMode ? 'dark' : 'light'} bg-background min-h-screen p-4`}>
-            <header>
-                <ToggleSwitch
-                    onChange={toggleDarkMode}
-                    isChecked={isDarkMode}
-                    content={isDarkMode ? <FaMoon className="text-accent" /> : <FaSun className="text-accent" />}
-                />
+        <div className={`${isDarkMode ? 'dark' : 'light'} bg-background min-h-screen p-5`}>
+            <header className="flex flex-row">
+                <div className="basis-2/3 text-text text-lg text-bold">Logo</div>
+                <div className="basis-1/3">
+                    <ToggleSwitch
+                        classes="justify-end"
+                        onChange={toggleDarkMode}
+                        isChecked={isDarkMode}
+                        content={isDarkMode ? <FaMoon className="text-primary" /> : <FaSun className="text-primary" />}
+                        a11Content="Toggle dark mode"
+                    />
+                </div>
             </header>
             <main>{children}</main>
             <footer></footer>

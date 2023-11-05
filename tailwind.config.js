@@ -3,7 +3,9 @@ import tailwindTypography from '@tailwindcss/typography';
 import { createThemes } from 'tw-colors';
 
 export default {
-    content: ['./src/**/*!(*.stories|*.spec).{ts,tsx,mdx,html}'],
+    content: ['./src/**/*!(*.stories.*|*.spec).{ts,tsx,mdx,html}'],
+    purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+    safelist: ['bg-primary', 'bg-secondary'],
     darkMode: 'class',
     theme: {
         fontFamily: {
@@ -36,15 +38,15 @@ export default {
             light: {
                 background: '#F5F5DC', //Beige
                 text: '#2E2E2E', //Dark Slate Gray
-                accent: '#008080', //Teal
-                highlight: '#C0C0C0', //Silver
+                primary: '#008080', //Teal
+                secondary: '#C0C0C0', //Silver
                 error: '#B76E79', //Pale Chestnut
             },
             dark: {
                 background: '#1E1E1E', //Deep Slate
                 text: '#C0C0C0', //Silver Grey
-                accent: '#536DFE', //Blueberry
-                highlight: '#8BC34A', //Pale Green
+                primary: '#536DFE', //Blueberry
+                secondary: '#8BC34A', //Pale Green
                 error: '#FF6659', //Orange Red
             },
         }),
