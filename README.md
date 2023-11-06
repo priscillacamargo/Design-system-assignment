@@ -22,10 +22,10 @@ For starting storybook please run:
 
 ```npm run storybook```
 
-## Dependencies and Tech Chosen
+## Dependencies and Tech
 
 - Taiwind as CSS framework
-- Vite for bundling
+- Vite for bundling 
 - Typescript for type checking
 - Testing Library and Jest for testing
 - Storybook for building isolated components
@@ -33,11 +33,11 @@ For starting storybook please run:
 ## Assumptions
 
 - I didn't focus on fine tunning deployments
-- Created composable components using atom design principles
-- The isolated components still use variables from the theme (assuming that the Design System is opinionated)
+- Created composable components using atomic design principles
+- The isolated components still use some variables from the theme (assuming that the Design System is opinionated)
 - Just created a small test example didn't focus in extensive test implementation
-- I didn't set react router to manage several pages- I focused in the concepts important for the design system
-- I didn't set a persistence for the theme - I focused in the concepts important for the design system
+- I didn't set react router to manage several pages- I focused on the concepts more relevant for the design system
+- I didn't set a browser persistence for the theme - I focused on the concepts more relevant for the design system
 
 ## From Vite Readme
 
